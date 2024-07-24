@@ -2,8 +2,6 @@ import 'dart:io';
 import 'dart:convert';
 
 void main() {
-
-  
   print("Your name:");
   var fullName = stdin.readLineSync(encoding: utf8)!;
 
@@ -13,7 +11,7 @@ void main() {
   print("Your GPA:");
   double GPA = double.parse(stdin.readLineSync()!);
 
-  print("Hello $fullName!");
+  print("Xin chào $fullName!");
   print("Your age is: $age");
-  print("Your GPA is: $GPA");
+  print("Your GPA is: ${GPA.toStringAsPrecision(2)}");
 }
